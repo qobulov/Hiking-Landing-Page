@@ -10,7 +10,7 @@
       rgba(0, 0, 0, 0.5) 50%,
       rgba(0, 0, 0, 0.5) 50%
     ),
-    url(Mountain.png);
+    url(images/Mountain.png);
   background-size: cover;
   background-color: black; /* bo‘sh joy qolsa orqa fon to‘ldiradi */
   background-position: center;
@@ -85,7 +85,7 @@ ul li a:hover {
   float: left;
   font-size: 16px;
   padding: 10px;
-  background: transparent ;
+  background: transparent;
 }
 
 .content {
@@ -116,7 +116,7 @@ ul li a:hover {
   font-size: 20px;
   padding-left: 20px;
   letter-spacing: 2px;
-  margin-top: 8%;
+  margin-top: 9%;
   font-family: Arial;
   color: chocolate;
 }
@@ -144,14 +144,16 @@ ul li a:hover {
   background-color: azure;
 }
 
-.box{
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
 
-.box1, .box2, .box3{
+.bx1,
+.bx2,
+.bx3 {
   width: 328px;
   height: 135px;
   margin: 20px;
@@ -161,13 +163,15 @@ ul li a:hover {
   transition: 0.4s ease;
 }
 
-.box1:hover, .box2:hover, .box3:hover{
+.bx1:hover,
+.bx2:hover,
+.bx3:hover {
   box-shadow: 0 0 20px chocolate;
 }
 
 .title {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 10px;
 }
 
@@ -182,4 +186,322 @@ ul li a:hover {
   font-size: 18px;
   font-weight: bold;
   color: white;
+}
+
+.content2 {
+  width: 1200px;
+  margin: auto;
+  height: auto;
+  color: black;
+  position: relative;
+}
+
+.content2 .title1 h2 {
+  font-size: 60px;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  font-family: Georgia, "Times New Roman";
+  text-align: center;
+  font-weight: bold;
+}
+.content2 .title1 h4 {
+  font-size: 20px;
+  padding-left: 20px;
+  letter-spacing: 2px;
+  margin-top: 20%;
+  text-align: center;
+  font-family: Arial;
+  color: chocolate;
+}
+
+.content2 .par {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  margin-top: 20px;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.box2 {
+  display: flex;
+  justify-content: space-around; /* boxlarni yonma-yon joylashtiradi */
+  margin-top: 30px;
+  gap: 20px; /* oralariga masofa */
+}
+
+.box2 .bx1,
+.box2 .bx2,
+.box2 .bx3 {
+  width: 350px;
+  min-height: 260px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* title, text, link orasida joy qoldiradi */
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* yumshoq soyali card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box2 .bx1:hover,
+.box2 .bx2:hover,
+.box2 .bx3:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.box2 .title h3 {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 10px;
+}
+.box2 .title img {
+  width: 50px; /* logoni kichikroq qilish */
+  height: 50px;
+  margin-bottom: 10px; /* logo bilan h3 orasida masofa */
+}
+.box2 p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.box2 a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.section img {
+  width: 560px;
+  height: auto;
+  border-radius: 10px;
+  margin: 150px 100px 0px 100px;
+}
+
+/* title qismi */
+.section .title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.section .title h4 {
+  font-size: 18px;
+  color: chocolate;
+  letter-spacing: 2px;
+  margin-top: 200px;
+  margin-left: -490px;
+}
+
+.section .title h2 {
+  font-size: 48px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  margin-left: -270px;
+  margin-bottom: 20px;
+}
+
+.section .title .par {
+  width: 500px;
+  height: auto;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  margin-left: -150px;
+  padding: 15px;
+}
+
+.section .btn {
+  width: 160px;
+  height: 40px;
+  background: rgb(255, 106, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: -490px;
+  transition: 0.4s ease;
+}
+
+.section .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.section .btn:hover {
+  background: azure;
+}
+
+.section .btn:hover a {
+  color: chocolate;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px;
+  gap: 40px;
+}
+
+.section2 img {
+  width: 560px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.section2 .title {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 50px;
+  padding: 20px;
+}
+
+.section2 .title h4 {
+  font-size: 18px;
+  color: chocolate;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  margin-left: -320px;
+}
+
+.section2 .title h2 {
+  font-size: 48px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: -110px;
+}
+
+.section2 .title .par {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.section2 .btn {
+  width: 160px;
+  height: 40px;
+  background: rgb(255, 106, 0);
+  border: none;
+  margin-left: -330px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.section2 .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.section2 .btn:hover {
+  background: azure;
+}
+
+.section2 .btn:hover a {
+  color: chocolate;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.section3 .images {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  justify-content: space-between;
+  margin: 50px;
+  gap: 20px;
+}
+
+.section3 .title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  margin-top: 100px;
+}
+
+.section3 .title h4 {
+  font-size: 18px;
+  color: chocolate;
+  letter-spacing: 2px;
+}
+
+.section3 .title h2 {
+  font-size: 48px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  color: black;
+}
+
+.section3 .title .par {
+  width: 500px;
+  height: auto;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333;
+}
+
+.section3 .images .im1 img,
+.section3 .images .im2 img,
+.section3 .images .im3 img,
+.section3 .images .im4 img {
+  width: 270px;
+  height: auto;
+}
+
+.section3 .images .im1 h5,
+.section3 .images .im2 h5,
+.section3 .images .im3 h5,
+.section3 .images .im4 h5 {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  color: black;
+}
+
+.section3 .images #spec {
+  width: 250px;
+  margin: 4px;
+  padding-left: 10px;
+}
+
+.section3 .images p {
+  font-size: 19px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+}
+.section3 .images span {
+  font-weight: lighter;
 }
