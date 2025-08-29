@@ -471,11 +471,33 @@ ul li a:hover {
   color: #333;
 }
 
-.section3 .images .im1 img,
-.section3 .images .im2 img,
-.section3 .images .im3 img,
-.section3 .images .im4 img {
+.section3 .images .im1,
+.section3 .images .im2,
+.section3 .images .im3,
+.section3 .images .im4 {
+  position: relative;
+  height: auto;
+}
+
+.section3 .images .im1 .bg,
+.section3 .images .im2 .bg,
+.section3 .images .im3 .bg,
+.section3 .images .im4 .bg {
   width: 270px;
+  height: auto;
+  display: block;
+
+}
+
+
+.section3 .images .im1 .overlay,
+.section3 .images .im2 .overlay,
+.section3 .images .im3 .overlay,
+.section3 .images .im4 .overlay {
+  position: absolute;
+  top: 20px;   
+  left: 20px;  
+  width: 100px;
   height: auto;
 }
 
