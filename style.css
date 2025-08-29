@@ -486,17 +486,15 @@ ul li a:hover {
   width: 270px;
   height: auto;
   display: block;
-
 }
-
 
 .section3 .images .im1 .overlay,
 .section3 .images .im2 .overlay,
 .section3 .images .im3 .overlay,
 .section3 .images .im4 .overlay {
   position: absolute;
-  top: 20px;   
-  left: 20px;  
+  top: 20px;
+  left: 20px;
   width: 100px;
   height: auto;
 }
@@ -525,5 +523,85 @@ ul li a:hover {
   color: black;
 }
 .section3 .images span {
+  font-weight: lighter;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  border: #333 solid 1px;
+}
+
+.section4 .title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  margin-top: 100px;
+  border: #333 solid 1px;
+}
+.section4 .title h4 {
+  font-size: 18px;
+  color: chocolate;
+  letter-spacing: 2px;
+}
+
+.section4 .title h2 {
+  font-size: 48px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  color: black;
+}
+
+.section4 .title .par {
+  width: 500px;
+  height: auto;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: black;
+}
+
+.section4 .user-feedback {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: auto;
+  border: #333 solid 1px;
+}
+
+.section4 .user-feedback .user1,
+.section4 .user-feedback .user2,
+.section4 .user-feedback .user3 {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  color: black;
+  border: #333 solid 1px;
+}
+
+.section4 .user-feedback .user1 .par,
+.section4 .user-feedback .user2 .par,
+.section4 .user-feedback .user3 .par {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.section4 .user-feedback h4 {
+  font-size: 18px;
+  color: black;
+  margin-top: 30px;
+}
+
+.section4 .user-feedback h5 {
+  font-size: 16px;
+  color: gray;
+  /* margin-top: 10px; */
   font-weight: lighter;
 }
