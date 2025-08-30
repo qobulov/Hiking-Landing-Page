@@ -531,7 +531,7 @@ ul li a:hover {
   flex-direction: column;
   align-items: center;
   margin: 50px;
-  border: #333 solid 1px;
+  
 }
 
 .section4 .title {
@@ -541,7 +541,7 @@ ul li a:hover {
   width: 500px;
   height: auto;
   margin-top: 100px;
-  border: #333 solid 1px;
+  
 }
 .section4 .title h4 {
   font-size: 18px;
@@ -565,23 +565,32 @@ ul li a:hover {
   color: black;
 }
 
+
 .section4 .user-feedback {
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  width: 1400px;
   height: auto;
-  border: #333 solid 1px;
+  
 }
 
 .section4 .user-feedback .user1,
 .section4 .user-feedback .user2,
 .section4 .user-feedback .user3 {
   width: 400px;
-  height: 300px;
+  height: auto;
   margin: 20px;
   padding: 20px;
   color: black;
-  border: #333 solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section4 .user-feedback .user1:hover,
+.section4 .user-feedback .user2:hover,
+.section4 .user-feedback .user3:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section4 .user-feedback .user1 .par,
@@ -593,15 +602,153 @@ ul li a:hover {
   margin-top: 20px;
 }
 
-.section4 .user-feedback h4 {
-  font-size: 18px;
-  color: black;
-  margin-top: 30px;
+.section4 .user-feedback .rt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-top: 20px;
 }
 
-.section4 .user-feedback h5 {
+.section4 .user-feedback .rt .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.section4 .user-feedback .rt h4 {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+
+.section4 .user-feedback .rt h5 {
   font-size: 16px;
   color: gray;
-  /* margin-top: 10px; */
   font-weight: lighter;
+  margin: 0;
+}
+
+.section4 .user-feedback #rating {
+  width: 130px;
+  height: 20px;
+  margin: 0;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.newsletter .small-text {
+  color: orange;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.newsletter h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1c2b50;
+  margin-bottom: 10px;
+}
+
+.newsletter .sub-text {
+  color: gray;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.newsletter .subscribe-box {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+}
+
+.newsletter button {
+  background: orange;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-about h3 {
+  color: orange;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-about p {
+  margin: 15px 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.footer-about .socials a {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-links h4,
+.footer-about-links h4,
+.footer-office h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1c2b50;
+}
+
+.footer-links ul,
+.footer-about-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-about-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-about-links a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-office p {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
 }
