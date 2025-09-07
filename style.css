@@ -21,7 +21,7 @@ body {
   width: 100%;
   z-index: 10;
   top: 0;
-  background: transparent;
+  background: white;
 }
 
 .main-header__brand {
@@ -94,7 +94,6 @@ ul {
   font-family: Arial;
   font-weight: bold;
 }
-
 
 .page1 .btn1,
 .page1 .btn2 {
@@ -217,11 +216,11 @@ ul {
   padding: 25px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* title, text, link orasida joy qoldiradi */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   background: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* yumshoq soyali card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -237,9 +236,9 @@ ul {
   margin-bottom: 10px;
 }
 .box2 .title img {
-  width: 50px; /* logoni kichikroq qilish */
+  width: 50px;
   height: 50px;
-  margin-bottom: 10px; /* logo bilan h3 orasida masofa */
+  margin-bottom: 10px;
 }
 .box2 p {
   font-size: 14px;
@@ -255,15 +254,19 @@ ul {
 .page3 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 50px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.page3 > div {
+  width: 50%;
+  display: inline-block;
 }
 
 .page3 img {
   width: 560px;
   height: auto;
   border-radius: 10px;
-  margin: 150px 100px 0px 100px;
 }
 
 /* title qismi */
@@ -277,16 +280,12 @@ ul {
   font-size: 18px;
   color: chocolate;
   letter-spacing: 2px;
-  margin-top: 200px;
-  margin-left: -490px;
 }
 
 .page3 .title h2 {
   font-size: 48px;
   font-family: "Times New Roman", serif;
   font-weight: bold;
-  margin-left: -270px;
-  margin-bottom: 20px;
 }
 
 .page3 .title .par {
@@ -296,9 +295,6 @@ ul {
   font-size: 18px;
   line-height: 28px;
   color: #333;
-  margin-bottom: 30px;
-  margin-left: -150px;
-  padding: 15px;
 }
 
 .page3 .btn {
@@ -309,7 +305,7 @@ ul {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-  margin-left: -490px;
+  margin-top: 50px;
   transition: 0.4s ease;
 }
 
@@ -322,56 +318,54 @@ ul {
   background: azure;
 }
 
-.page3 .btn:hover a {
+.page4 .btn:hover a {
   color: chocolate;
 }
 
 .page4 {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin: 50px;
-  gap: 40px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.page4 > div {
+  width: 50%;
+  display: inline-block;
 }
 
 .page4 img {
   width: 560px;
   height: auto;
   border-radius: 10px;
-  margin-top: 50px;
 }
 
+/* title qismi */
 .page4 .title {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  width: 600px;
-  margin-left: 50px;
-  padding: 20px;
 }
 
 .page4 .title h4 {
   font-size: 18px;
   color: chocolate;
   letter-spacing: 2px;
-  margin-bottom: 10px;
-  margin-top: 100px;
-  margin-left: -320px;
 }
 
 .page4 .title h2 {
   font-size: 48px;
   font-family: "Times New Roman", serif;
   font-weight: bold;
-  margin-bottom: 20px;
-  margin-left: -110px;
 }
 
 .page4 .title .par {
+  width: 500px;
+  height: auto;
   font-family: Arial, sans-serif;
   font-size: 18px;
   line-height: 28px;
   color: #333;
-  margin-bottom: 30px;
 }
 
 .page4 .btn {
@@ -379,10 +373,10 @@ ul {
   height: 40px;
   background: rgb(255, 106, 0);
   border: none;
-  margin-left: -330px;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
+  margin-top: 50px;
   transition: 0.4s ease;
 }
 
@@ -398,6 +392,7 @@ ul {
 .page4 .btn:hover a {
   color: chocolate;
 }
+
 
 .page5 {
   display: flex;
