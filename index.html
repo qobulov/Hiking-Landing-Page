@@ -6,51 +6,49 @@
     <title>Hiking Landing Page</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/png" href="Images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
 
   <body>
     <header class="main-header">
       <div class="main-header__brand">
         <a href="/index.html">
-          <img src="images/logo.png" alt="Logo" />
+          <img src="images/logo.png" alt="Logo" class="logo" />
+          <span class="logo-text">Camps</span>
         </a>
       </div>
 
       <nav class="main-navigation">
         <ul class="main-navigation__items">
-          <li class="main-navigation__item active">
-            <a href="#">Home</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#">Services</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#">Schedule</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#">Book</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#">Contact</a>
-          </li>
+          <li class="main-navigation__item"><a href="#">Home</a></li>
+          <li class="main-navigation__item"><a href="#">About</a></li>
+          <li class="main-navigation__item"><a href="#">Contact</a></li>
+          <li class="main-navigation__item"><a href="#">Services</a></li>
+          <li class="main-navigation__item"><a href="#">Schedule</a></li>
+          <li class="main-navigation__item"><a href="#">Book</a></li>
         </ul>
       </nav>
-      <!-- <div class="signup">
-        <a href="#"><button class="su">Sign Up</button></a>
-      </div> -->
+      <div class="signup">
+        <a href="#"><button class="signup-btn">Sign Up</button></a>
+      </div>
     </header>
 
     <section class="page1">
       <h4 class="page1__title1">mountain hiking society</h4>
-      <h1 class="page1__title2">Explore The World <br />with Exciting People</h1>
+      <h1 class="page1__title2">
+        Explore The World <br />with Exciting People
+      </h1>
       <p class="par">
         We envision a world where everyone feels welcome in the American
         <br />
         hiking community and has permanent access to meaningful hiking.
       </p>
 
-      <button class="btn1"><a href="#"></a>Explore More</button>
-      <button class="btn2"><a href="#"></a>Learn More</button>
+      <button class="btn"><a href="#">Explore More</a></button>
+      <button class="btn"><a href="#">Learn More</a></button>
 
       <div class="box">
         <div class="bx1">
@@ -89,9 +87,9 @@
     </section>
 
     <section class="page2">
-      <div class="title1">
-        <h4>JUST FOR YOU</h4>
-        <h2>Our Mission</h2>
+      <div class="page2__desc">
+        <h4 class="page2__title1">JUST FOR YOU</h4>
+        <h2 class="page2__title2">Our Mission</h2>
       </div>
 
       <p class="par">
@@ -100,7 +98,7 @@
       </p>
 
       <div class="box2">
-        <div class="bx1">
+        <div class="page2-bx1">
           <div class="title">
             <img src="images/icon1.png" alt="icon1" />
             <h3>Start Slow</h3>
@@ -112,7 +110,7 @@
           <a href="#">Read More</a>
         </div>
 
-        <div class="bx2">
+        <div class="page2-bx2">
           <div class="title">
             <img src="images/icon2.png" alt="icon2" />
 
@@ -125,7 +123,7 @@
           <a href="#">Read More</a>
         </div>
 
-        <div class="bx3">
+        <div class="page2-bx3">
           <div class="title">
             <img src="images/icon3.png" alt="icon3" />
 
@@ -144,9 +142,9 @@
       <div class="image">
         <img src="images/people.png" alt="image1" />
       </div>
-      <div class="title">
-        <h4>WE HAVE FUN</h4>
-        <h2>Alternative Breaks</h2>
+      <div class="page3-desc">
+        <h4 class="page3__title1">WE HAVE FUN</h4>
+        <h2 class="page3__title2">Alternative Breaks</h2>
         <p class="par">
           Make Friends. Make Memories. Make a Difference. Volunteer trail
           stewardship projects in America`s parks and forests designed
@@ -161,9 +159,9 @@
     </section>
 
     <section class="page4">
-      <div class="title">
-        <h4>WHATS NEXT?</h4>
-        <h2>Explore Mountain</h2>
+      <div class="page4-desc">
+        <h4 class="page4__title">WHATS NEXT?</h4>
+        <h2 class="page4__title2">Explore Mountain</h2>
         <p class="par">
           Make Friends. Make Memories. Make a Difference. Volunteer <br />
           trail stewardship projects in America`s parks and forests <br />
@@ -183,9 +181,9 @@
     </section>
 
     <section class="page5">
-      <div class="title">
-        <h4>WHERE TO GO?</h4>
-        <h2>Explore Mountain</h2>
+      <div class="page5-desc">
+        <h4 class="page5__title">WHERE TO GO?</h4>
+        <h2 class="page5__title2">Popular Mountain</h2>
         <p class="par">
           While we can customize your plan to suit your <br />needs, most
           clients schedule regular services:
@@ -228,9 +226,9 @@
     </section>
 
     <section class="page6">
-      <div class="title">
-        <h4>HAPPY HIKERS</h4>
-        <h2>Client`s Say About Us</h2>
+      <div class="page6__desc">
+        <h4 class="page6__title1">HAPPY HIKERS</h4>
+        <h2 class="page6__title2">Client`s Say About Us</h2>
         <p class="par">
           These are things that clients who have used <br />
           our features and works says.
@@ -286,9 +284,9 @@
 
     <!-- Newsletter Section -->
     <section class="newsletter">
-      <p class="small-text">GET CONNECT</p>
-      <h2>Subscribe to our newsletter</h2>
-      <p class="sub-text">
+      <p class="newsletter__title small-text">GET CONNECT</p>
+      <h2 class="newsletter__title2">Subscribe to our newsletter</h2>
+      <p class="newsletter__title3 sub-text">
         Get notification about tips, new product and exclusive promo news just
         for you.
       </p>
@@ -303,22 +301,24 @@
       <div class="footer-container">
         <!-- Left: Logo + Text -->
         <div class="footer-about">
-          <h3><span class="logo-icon">📍</span> Camps</h3>
+          <h3 class="footer__title">
+            <span class="logo-icon"><i class="fas fa-hiking"></i></span> Camps
+          </h3>
           <p>
             We envision a world where everyone feels welcome in the American
             hiking community and has permanent access to meaningful hiking.
           </p>
           <div class="socials">
-            <a href="#">🌐</a>
-            <a href="#">📸</a>
-            <a href="#">🐦</a>
-            <a href="#">▶️</a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
 
         <!-- Links -->
         <div class="footer-links">
-          <h4>Links</h4>
+          <h4 class="footer__title2">Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
@@ -330,7 +330,7 @@
 
         <!-- About -->
         <div class="footer-about-links">
-          <h4>About</h4>
+          <h4 class="footer__title3">About</h4>
           <ul>
             <li><a href="#">Partners</a></li>
             <li><a href="#">Careers</a></li>
@@ -341,7 +341,7 @@
 
         <!-- Office -->
         <div class="footer-office">
-          <h4>Our Office</h4>
+          <h4 class="footer__title4">Our Office</h4>
           <p>
             Indonesia <br />
             Jl. Griya Permata Hijau no D1 <br />
@@ -355,7 +355,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2021 Camps All rights reserved.</p>
+        <p class="footer__title5">© 2021 Camps All rights reserved.</p>
       </div>
     </footer>
   </body>
